@@ -3,7 +3,7 @@ name: Amazon 出産準備BOX 在庫チェック
 on:
   schedule:
     # 毎時0分・30分に実行（JST = UTC+9 なので UTC で設定）
-    - cron: "0 10 */3 * *"
+    - cron:  "0,30 * * * *"
   # 手動実行も可能
   workflow_dispatch:
 
